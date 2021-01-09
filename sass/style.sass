@@ -1,26 +1,66 @@
-body
-    margin: 0
-    padding: 0
-*
-    box-sizing: border-box
-    
+// Шапка сайта
 .header
-    width: 100%
     height: 100vh
-    padding-left:  11.979%
-    padding-top: 8.333%
+    max-height: 1082px
+    max-width: 1920px
+    margin: 0 auto
     -webkit-animation: background 30s infinite
     -moz-animation: background 30s infinite
     animation: background 30s infinite
     background-size: contain
+    &__inner
+        padding-left:  11.979%
+        padding-top: 8.333%
     &__title
-        width: 27.343vw
-        height: 27.343vw
+        display: flex
+        flex-direction: column
+        align-items: center
+        position: relative
+        width: 528px
+        height: 528px
+        padding-top: 15px
         background-color: #fff
         border: 10px solid #f4d4a5
         border-radius: 50% 
-
-
+    &__company
+        padding-top: 20px
+        text-transform: uppercase
+        font-family: $lato-b
+        font-weight: bold
+        font-size: 3.5rem
+        color: #bf4200
+    &__phone
+        padding-top: 30px
+        font-size: 3.8rem
+        font-family: $lato-l
+        font-weight: light
+        text-decoration: none
+        color: #000000
+        &:hover
+            text-decoration: underline
+            color: blue
+    &__main-title
+        padding-top: 45px
+        font-size: 4.2rem
+        font-family: $lato-b, sans-serif
+        font-weight: bold
+        color: #1fad26
+        text-transform: uppercase
+        text-align: center
+        &::after
+            content: ""
+            display: block
+            position: absolute
+            bottom: -125px
+            left: 50%
+            transform: translateX(-50%)
+            width: 253px
+            height: 253px
+            border: 6px solid #f7f5e2
+            border-radius: 50%
+            background: center url(../img/prize.png)
+        
+// Анимация фона шапки сайта. 3 картинки по переменно меняются
 @-webkit-keyframes background 
     from 
         background: url(../img/bg-house_1.jpg)
@@ -120,3 +160,64 @@ body
         background: url(../img/bg-house_1.jpg)
         background-size: 100% auto
         background-repeat: no-repeat
+// Конец шапки сайта
+// Начало основного контента
+
+.main--wrapper
+    max-width: 1100px
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 90px
+.discription
+    font-family: $roboto-r
+    font-size: 3.0rem
+    color: #000
+    &__title
+        width: 800px
+        margin: 0 auto
+        text-align: center
+        color: #d07a2d
+        font-size: 4.1rem
+        padding-bottom: 30px
+    p
+        text-align: center
+        padding-top: 45px
+        span
+            text-transform: uppercase
+    &__garant
+        font-size: 3.2rem
+        text-transform: uppercase
+    &__img
+        padding-top: 70px
+        padding-bottom: 100px
+.main__title
+    color: #d0662d
+    font-size: 4.1rem
+    font-family: $roboto-b
+    font-weight: bold
+    text-transform: uppercase
+        // начало списка домов
+.houses
+    text-align: center
+    font-size: 2.5rem
+    font-family: $roboto-r
+    font-weight: normal
+    color: #000
+    line-height: 1.2
+    padding-top: 110px
+    &__title
+        font-size: 3.2rem
+        font-family: $roboto-b
+        font-weight: bold
+        text-transform: uppercase
+    &__price
+        color: #17753b
+        padding-bottom: 30px
+        // конец списка домов
+
+
+
+
+

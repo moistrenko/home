@@ -49,62 +49,108 @@ input {
 
 @font-face {
   font-family: "Conv_Lato-Bold";
-  src: url("fonts/Lato-Bold.eot");
-  src: local("☺"), url("fonts/Lato-Bold.woff") format("woff"), url("fonts/Lato-Bold.ttf") format("truetype"), url("fonts/Lato-Bold.svg") format("svg");
+  src: url("../fonts/Lato-Bold.eot");
+  src: local("☺"), url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.ttf") format("truetype"), url("../fonts/Lato-Bold.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Conv_Lato-Light";
-  src: url("fonts/Lato-Light.eot");
-  src: local("☺"), url("fonts/Lato-Light.woff") format("woff"), url("fonts/Lato-Light.ttf") format("truetype"), url("fonts/Lato-Light.svg") format("svg");
+  src: url("../fonts/Lato-Light.eot");
+  src: local("☺"), url("../fonts/Lato-Light.woff") format("woff"), url("../fonts/Lato-Light.ttf") format("truetype"), url("../fonts/Lato-Light.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Conv_Roboto-Bold";
-  src: url("fonts/Roboto-Bold.eot");
-  src: local("☺"), url("fonts/Roboto-Bold.woff") format("woff"), url("fonts/Roboto-Bold.ttf") format("truetype"), url("fonts/Roboto-Bold.svg") format("svg");
+  src: url("../fonts/Roboto-Bold.eot");
+  src: local("☺"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Conv_Roboto-Light";
-  src: url("fonts/Roboto-Light.eot");
-  src: local("☺"), url("fonts/Roboto-Light.woff") format("woff"), url("fonts/Roboto-Light.ttf") format("truetype"), url("fonts/Roboto-Light.svg") format("svg");
+  src: url("../fonts/Roboto-Light.eot");
+  src: local("☺"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.ttf") format("truetype"), url("../fonts/Roboto-Light.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Conv_Roboto-Regular";
-  src: url("fonts/Roboto-Regular.eot");
-  src: local("☺"), url("fonts/Roboto-Regular.woff") format("woff"), url("fonts/Roboto-Regular.ttf") format("truetype"), url("fonts/Roboto-Regular.svg") format("svg");
+  src: url("../fonts/Roboto-Regular.eot");
+  src: local("☺"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-body {
-  margin: 0;
-  padding: 0;
-}
-
-* {
-  box-sizing: border-box;
+html {
+  font-size: 62.5%;
 }
 
 .header {
-  width: 100%;
   height: 100vh;
-  padding-left: 11.979%;
-  padding-top: 8.333%;
+  max-height: 1082px;
+  max-width: 1920px;
+  margin: 0 auto;
   animation: background 30s infinite;
   background-size: contain;
 }
+.header__inner {
+  padding-left: 11.979%;
+  padding-top: 8.333%;
+}
 .header__title {
-  width: 27.343vw;
-  height: 27.343vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 528px;
+  height: 528px;
+  padding-top: 15px;
   background-color: #fff;
   border: 10px solid #f4d4a5;
   border-radius: 50%;
+}
+.header__company {
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-family: "Conv_Lato-Bold";
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: #bf4200;
+}
+.header__phone {
+  padding-top: 30px;
+  font-size: 3.8rem;
+  font-family: "Conv_Lato-Light";
+  font-weight: light;
+  text-decoration: none;
+  color: #000000;
+}
+.header__phone:hover {
+  text-decoration: underline;
+  color: blue;
+}
+.header__main-title {
+  padding-top: 45px;
+  font-size: 4.2rem;
+  font-family: "Conv_Lato-Bold", sans-serif;
+  font-weight: bold;
+  color: #1fad26;
+  text-transform: uppercase;
+  text-align: center;
+}
+.header__main-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -125px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 253px;
+  height: 253px;
+  border: 6px solid #f7f5e2;
+  border-radius: 50%;
+  background: center url(../img/prize.png);
 }
 @keyframes background {
   from {
@@ -146,5 +192,175 @@ body {
     background: url(../img/bg-house_1.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
+  }
+}
+.main--wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+}
+
+.discription {
+  font-family: "Conv_Roboto-Regular";
+  font-size: 3rem;
+  color: #000;
+}
+.discription__title {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #d07a2d;
+  font-size: 4.1rem;
+  padding-bottom: 30px;
+}
+.discription p {
+  text-align: center;
+  padding-top: 45px;
+}
+.discription p span {
+  text-transform: uppercase;
+}
+.discription__garant {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+}
+.discription__img {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.main__title {
+  color: #d0662d;
+  font-size: 4.1rem;
+  font-family: "Conv_Roboto-Bold";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.houses {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Conv_Roboto-Regular";
+  font-weight: normal;
+  color: #000;
+  line-height: 1.2;
+  padding-top: 110px;
+}
+.houses__title {
+  font-size: 3.2rem;
+  font-family: "Conv_Roboto-Bold";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.houses__price {
+  color: #17753b;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1920px) {
+  .header__inner {
+    padding-left: 5%;
+    padding-top: 4%;
+  }
+  .header__title {
+    width: 450px;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .header__title {
+    padding-top: 10px;
+    width: 320px;
+    height: 320px;
+  }
+  .header__company {
+    padding-top: 15px;
+    font-size: 2.5rem;
+  }
+  .header__phone {
+    padding-top: 20px;
+    font-size: 2.8rem;
+  }
+  .header__main-title {
+    padding-top: 20px;
+    font-size: 3.2rem;
+  }
+  .header__main-title::after {
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .houses img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .header__title {
+    padding-top: 10px;
+    width: 250px;
+    height: 250px;
+  }
+  .header__company {
+    padding-top: 10px;
+    font-size: 1.5rem;
+  }
+  .header__phone {
+    padding-top: 10px;
+    font-size: 2.2rem;
+  }
+  .header__main-title {
+    padding-top: 10px;
+    font-size: 2.2rem;
+  }
+  .header__main-title::after {
+    width: 150px;
+    height: 150px;
+    bottom: -75px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header__title {
+    width: 200px;
+    height: 200px;
+  }
+  .header__title .header-logo {
+    display: none;
+  }
+  .header__phone, .header__main-title {
+    font-size: 1.8rem;
+  }
+  .header__phone::after, .header__main-title::after {
+    width: 120px;
+    height: 120px;
+    bottom: -60px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header__title {
+    padding-top: 25px;
+    border-width: 4px;
+  }
+  .header__inner {
+    padding-top: 2%;
+    padding-left: 2%;
+  }
+  .header__title {
+    width: 150px;
+    height: 150px;
+  }
+  .header__phone, .header__main-title {
+    font-size: 1.2rem;
+  }
+  .header__phone::after, .header__main-title::after {
+    border-width: 1px;
+    width: 75px;
+    height: 75px;
+    top: 0;
+    left: 120%;
   }
 }
