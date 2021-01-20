@@ -1,13 +1,12 @@
 // Шапка сайта
 .header
-    height: 100vh
-    max-height: 1082px
+    height: 56.09vw
+    max-height: 1077px
     max-width: 1920px
     margin: 0 auto
     -webkit-animation: background 30s infinite
     -moz-animation: background 30s infinite
     animation: background 30s infinite
-    background-size: contain
     &__inner
         padding-left:  11.979%
         padding-top: 8.333%
@@ -169,13 +168,13 @@
     display: flex
     flex-direction: column
     align-items: center
-    padding-top: 90px
+    padding: 90px 20px 0 20px
 .discription
     font-family: $roboto-r
     font-size: 3.0rem
     color: #000
     &__title
-        width: 800px
+        max-width: 800px
         margin: 0 auto
         text-align: center
         color: #d07a2d
@@ -193,6 +192,7 @@
         padding-top: 70px
         padding-bottom: 100px
 .main__title
+    text-align: center
     color: #d0662d
     font-size: 4.1rem
     font-family: $roboto-b
@@ -216,6 +216,34 @@
         color: #17753b
         padding-bottom: 30px
         // конец списка домов
+// Начало блока с каталогом
+.catalog 
+    background: #f1dfbc
+    padding: 35px 0 35px
+    margin-top: 150px
+    &__wrapper
+        width: 100%
+        max-width: 1100px
+        margin: 0 auto
+    &__inner
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: center
+    &__img
+        img
+            max-width: 300px
+            height: auto
+    &__link
+        text-transform: uppercase
+        text-decoration: underline
+        font-size: 3.2rem
+        font-family: $roboto-b
+        background: #17753b
+        border: 5px solid #effd15
+        padding: 29px 35px
+        color: #fff
+// Конец блока с каталогом
 
 
 

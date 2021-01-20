@@ -87,12 +87,11 @@ html {
 }
 
 .header {
-  height: 100vh;
-  max-height: 1082px;
+  height: 56.09vw;
+  max-height: 1077px;
   max-width: 1920px;
   margin: 0 auto;
   animation: background 30s infinite;
-  background-size: contain;
 }
 .header__inner {
   padding-left: 11.979%;
@@ -200,7 +199,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 90px;
+  padding: 90px 20px 0 20px;
 }
 
 .discription {
@@ -209,7 +208,7 @@ html {
   color: #000;
 }
 .discription__title {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
   text-align: center;
   color: #d07a2d;
@@ -233,6 +232,7 @@ html {
 }
 
 .main__title {
+  text-align: center;
   color: #d0662d;
   font-size: 4.1rem;
   font-family: "Conv_Roboto-Bold";
@@ -258,6 +258,37 @@ html {
 .houses__price {
   color: #17753b;
   padding-bottom: 30px;
+}
+
+.catalog {
+  background: #f1dfbc;
+  padding: 35px 0 35px;
+  margin-top: 150px;
+}
+.catalog__wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.catalog__inner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.catalog__img img {
+  max-width: 300px;
+  height: auto;
+}
+.catalog__link {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 3.2rem;
+  font-family: "Conv_Roboto-Bold";
+  background: #17753b;
+  border: 5px solid #effd15;
+  padding: 29px 35px;
+  color: #fff;
 }
 
 @media screen and (max-width: 1920px) {
@@ -322,6 +353,12 @@ html {
     height: 150px;
     bottom: -75px;
   }
+
+  .catalog__link {
+    font-size: 2.2rem;
+    border-width: 3px;
+    padding: 15px 25px;
+  }
 }
 @media screen and (max-width: 600px) {
   .header__title {
@@ -338,6 +375,27 @@ html {
     width: 120px;
     height: 120px;
     bottom: -60px;
+  }
+
+  .main--wrapper {
+    padding-top: 30px;
+  }
+  .main--wrapper .discription__title {
+    font-size: 3.1rem;
+    padding-bottom: 0;
+  }
+  .main--wrapper .discription p {
+    font-size: 2rem;
+  }
+  .main--wrapper .discription__img {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .main--wrapper .main__title {
+    font-size: 3.1rem;
+  }
+  .main--wrapper .houses {
+    padding-top: 40px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -362,5 +420,30 @@ html {
     height: 75px;
     top: 0;
     left: 120%;
+  }
+
+  .main--wrapper .discription__title {
+    font-size: 2.1rem;
+  }
+  .main--wrapper .discription p {
+    padding-top: 25px;
+  }
+
+  .houses__title {
+    font-size: 2.2rem;
+  }
+  .houses p {
+    font-size: 1.5rem;
+  }
+  .houses__price {
+    padding-bottom: 10px;
+  }
+
+  .catalog__img img {
+    max-width: 200px;
+  }
+  .catalog__link {
+    font-size: 1.2rem;
+    padding: 10px 10px;
   }
 }
