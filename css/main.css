@@ -291,6 +291,15 @@ html {
   color: #fff;
 }
 
+.popup-gallery {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.popup-gallery img {
+  width: 250px;
+  height: 250px;
+}
+
 @media screen and (max-width: 1920px) {
   .header__inner {
     padding-left: 5%;
