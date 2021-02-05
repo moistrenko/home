@@ -1,9 +1,4 @@
 $(document).ready(function() {
-    $('.image-link').magnificPopup({type:'image'});
-  });
-
-
-$(document).ready(function() {
 	$('.popup-gallery').magnificPopup({
 		delegate: 'a',
 		type: 'image',

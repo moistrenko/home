@@ -294,6 +294,9 @@ html {
 .popup-gallery {
   max-width: 1100px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .popup-gallery img {
   width: 250px;
